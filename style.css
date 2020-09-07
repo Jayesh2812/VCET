@@ -54,7 +54,8 @@ body{
 
 }
 .intro-more-info{
-    font-size:max(.65rem,1.3vw);;
+    font-size:max(.65rem,1.3vw);
+    margin:0;
 }
 /* INFORMATION */
 .info-cols{
