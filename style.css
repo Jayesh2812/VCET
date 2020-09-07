@@ -1,3 +1,4 @@
+
 *{
     padding:0;
     margin:0;
@@ -200,4 +201,20 @@ body{
     opacity: 1;
     transform:translate(-50%,-50%);
 
+}
+.company-outer{
+    display:flex;
+    justify-content: space-evenly;
+    /* background-color:green; */
+}
+.company-image{
+    width:25%;
+    height:85px;
+}
+h2{
+    color:#007367;
+    display:block;
+    text-align:center;
+    /* background-color:red; */
+    /* border-color:blue; */
 }
