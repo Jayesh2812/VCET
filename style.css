@@ -67,10 +67,9 @@ body{
 }
 .info-col{
     background:var(--light-color);
-    width:23rem;
-    max-width:70%;
+    width:min(24rem,100%);
     text-align: center;
-    padding:2rem;
+    padding:2rem 0 ;
     box-shadow:2px 2px 10px rgba(0, 0, 0, 0.274);
 }
 .icon-wrapper{
