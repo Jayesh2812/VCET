@@ -20,9 +20,6 @@ body{
     color:var(--light-color);
 }
 /* Navbar */
-nav{
-    margin:1rem 2rem ;
-}
 /* Main list */
 .nav-items{
     display:flex;
@@ -205,7 +202,7 @@ nav{
 }
 
 .clg-info-title{
-    color:var(--green);
+    color:var(--title);
     font-size:max(1.5rem,2vw);
     font-weight:600;
     letter-spacing: 2px;
@@ -219,7 +216,7 @@ nav{
     position:absolute;
     width:7rem;
     height:2px;
-    background:var(--green);
+    background:var(--title);
     bottom:-1.5rem;
     left:0;
 }
@@ -229,7 +226,7 @@ nav{
 /* Gallery */
 .gallery-title{
     text-align: center;
-    color: var(--green);
+    color: var(--title);
     font-size:2rem;
     margin:1rem 0;
 }
