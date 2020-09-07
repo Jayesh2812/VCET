@@ -1,0 +1,204 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+    --btn-primary:#3EB54A;
+    --green :#1d8379 ;
+    --dark-blue: #326377;
+    --title :#007367;
+    --light-color:white;
+    --dark-color:black;
+}
+body{
+    font-family:Roboto;
+}
+*::selection{
+    background:var(--dark-color);
+    color:var(--light-color);
+}
+/* INTRO */
+#intro{
+    background: url(VCET\ image.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position:center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw),0 100% );
+    margin-bottom:-8vw;
+
+}
+.intro-div{
+    text-align:center;
+    background:linear-gradient(to right, #1d8379e0, #326477e7);
+    color:var(--light-color);
+    position: relative;
+    padding:2rem 0;
+    height:min(35rem,100vh);
+
+}
+.intro-title1{
+    font-size:max(1.5rem,3vw);
+    letter-spacing: 2px;
+    margin-top:1.5rem;
+}
+.intro-title2{
+    font-size:max(1.2rem,2.5vw);
+    letter-spacing: 2px;
+    margin:1rem 0;
+
+}
+.intro-info{
+    font-size:max(1rem,2vw);
+    font-weight:300;
+    margin-bottom:.5rem;
+
+}
+.intro-more-info{
+    font-size:max(.65rem,1.3vw);;
+}
+/* INFORMATION */
+.info-cols{
+    z-index: 1;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom:2rem;
+}
+.info-col{
+    background:var(--light-color);
+    width:23rem;
+    max-width:70%;
+    text-align: center;
+    padding:2rem;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.274);
+}
+.icon-wrapper{
+    position:relative;
+    display:inline-block;
+    width:4rem;
+    height:4rem;
+    background:var(--title);
+    border-radius: 50%;
+}
+.info-col-icon{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:2rem;
+}
+.info-col-title{
+    color:var(--title);
+    text-transform:uppercase;
+    font-size:2rem;
+}
+.info-col-links{
+    margin:1rem 0;
+}
+.info-col-link{
+    text-decoration:none;
+    margin-left:5px;
+    color:var(--dark-color);
+}
+.info-col-action{
+    margin-top:2rem;
+}
+.info-col-action-btn{
+    padding:.8rem 1.7rem;
+    text-decoration:none;
+    color:var(--light-color);
+    background:var(--btn-primary);
+    border-radius:5px;
+}
+/* College Information */
+#college_information{
+    background: url(statue.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position:center;
+}
+.clg-info{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding:.5rem 0;
+}
+.clg-info-div{
+    width:min(100vw,30rem);
+    align-items:center;
+    background:rgba(255, 255, 255, 0.726);
+    padding: 2.5rem;
+}
+
+.clg-info-title{
+    color:var(--green);
+    font-size:max(1.5rem,2vw);
+    font-weight:600;
+    letter-spacing: 2px;
+    position:relative;
+    margin: 1rem 0 3rem;
+
+
+}
+.clg-info-title::after{
+    content:" ";
+    position:absolute;
+    width:7rem;
+    height:2px;
+    background:var(--green);
+    bottom:-1.5rem;
+    left:0;
+}
+.clg-info-para,.clg-info-mission-list li{
+    margin-top:1rem;
+}
+/* Gallery */
+.gallery-title{
+    text-align: center;
+    color: var(--green);
+    font-size:2rem;
+    margin:1rem 0;
+}
+.gallery-div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:.5rem;
+    
+}
+.gallery-item{
+    width:22rem;
+    position:relative;
+}
+.gallery-item img{
+    width:100%;
+}
+.gallery-item-title{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,130%);
+    color:white;
+    opacity:0;
+    text-transform:uppercase;
+    font-size:1.5rem;
+    transition:.4s ease;
+    transition-property: opacity transform;
+}
+.gallery-item::before{
+    content:' ';
+    position:absolute;
+    width:100%;
+    height:100%;
+    transition:.4s ease;
+    transition-property: background-color;
+}
+.gallery-item:hover::before{
+    background:rgba(0, 0, 0, 0.562);
+}
+.gallery-item:hover .gallery-item-title{
+    opacity: 1;
+    transform:translate(-50%,-50%);
+
+}
